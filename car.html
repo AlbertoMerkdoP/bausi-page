@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi carrito</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="justify-content-center brand-dark">
+    <div class="row container justify-content-center">
+      <a href="#">
+        <img src="./logo.png" alt="inicio" width="100" height="30" class="imglogo">
+        <br>
+      </a>
+    </div>
+  </nav>
+    <nav class="navbar bg-light">
+      <div class="row container">
+        <div class="col-4 mt-3">
+          <ion-icon id="left" name="arrow-back-outline"></ion-icon>
+        </div>
+        <div class="col-8 mt-3">
+          <h4 class="txt">Mi Carrito</h4>
+        </div>
+      </div>
+    </nav>
+  <div class="containehr">
+    <div class="container row mt-4">
+      <div class="col-4">
+        <img src="./jogger-caqui-hombre.jpg" alt="1" class="cart">
+      </div>
+      <div class="col-8">
+        <h6 class="mt-1 title">Jogger caqui <br> hombre <br></h6>
+        <label class="description">Los Jogger en drill para hombre <br> están elaborados en tela drill...</label>
+        <h6 class="price">$88.000 COP</h6>
+      </div>
+    </div>
+    <hr>
+    <div class="container row mt-4">
+      <div class="col-4">
+        <img src="./911205-1-600x600.jpeg" alt="1" class="cart">
+      </div>
+      <div class="col-8">
+        <h6 class="title">Falda short denim <br> stancy</h6>
+        <label class="description">Tela rigida 100% algodón, rotos <br> agresivos, ruedo desflecado...</label>
+        <h6 class="price">$55.000 COP</h6>
+      </div>
+    </div>
+    <hr>
+    <div class="container row mt-4">
+      <div class="col-4">
+        <img src="./801176-1-600x600.jpeg" alt="1" class="cart">
+      </div>
+      <div class="col-8">
+        <h6 class="title">Camiseta básica <br> azul cielo mujer</h6>
+        <label class="description">Silueta básica, cómoda,<br> manga corta y cuello redondo. <br></label>
+        <h6 class="price">$24.000 COP</h6>
+      </div>
+    </div>
+  </div>
+  <div class="containehr">
+    <div class="row invoce mt-2">
+      <hr class="hr">
+      <div class="sub col-6">
+        Subtotal:
+      </div>
+      <div class="text-end prc col-6">
+        $167.000 COP
+      </div>
+      <div class="mt-5 sub col-6">
+      Envio:
+      </div>
+      <div class="mt-3 text-end prc col-6">
+        Ingrese a continuación la dirección de envío 
+      </div>
+      <div class="mt-3 sub col-6">
+        Descuento:
+      </div>
+      <div class="mt-3 text-end prc col-6">
+        $0 COP
+      </div>
+      <hr class="mt-4 hr">
+      <div class="mt-2 sub col-6">
+        Total:
+      </div>
+      <div class="mt-2 text-end total col-6">
+        $167.000 COP
+      </div>
+      <div class="container">
+        <button type="submit" class="mt-3 button submit mb-4">CONTINUAR</button>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    
+  </div>
+  </div>
+  <br>
+  <br>
+  <div class="nab fixed-bottom">
+    <div class="navigation">
+      <ul>
+        <li class="list">
+          <a href="./index.html">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="text">Inicio</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./search.html">
+            <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+            <span class="text">Buscar</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./categories.html">
+            <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+            <span class="text">Categorias</span>
+          </a>
+        </li>
+        <li class="list active">
+          <a href="#">
+            <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+            <span class="text">Mi carrito</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./login.html">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="text">Mi cuenta</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+  </div>
+  <script>
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+      list.forEach((item) => 
+      item.classList.remove('active'));
+      this.classList.add('active')
+    }
+    list.forEach((item) => 
+    item.addEventListener('click', activeLink))
+  </script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>

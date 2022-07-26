@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <nav class="justify-content-center brand-dark">
+    <div class="row container justify-content-center">
+      <a href="#">
+        <img src="./logo.png" alt="inicio" width="100" height="30" class="imglogo">
+        <br>
+      </a>
+    </div>
+  </nav>
+  <nav class="navbar bg-light">
+    <div class="row container">
+      <div class="col-4 mt-3">
+        <ion-icon id="left" name="arrow-back-outline"></ion-icon>
+      </div>
+      <div class="col-8 mt-3">
+        <h6 class="txt">Iniciar Sesión</h6>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h3 id="title">Bienvenid@!</h3>
+    <p id="subtitle">Ingresa nuevamente a tu cuenta</p>
+    
+    <form action="" id="login">
+      <div class="form-floating">
+        <input type="email" name="email" id="email"input-container class="form-control" placeholder="Correo electronico" autocomplete="off">
+        <label for="email" class="lbl">Correo electrónico</label>
+      </div>
+      <br>
+      <div class="form-floating">
+        <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Contraseña" autocomplete="off">
+        <label for="pwd">Contraseña</label>
+      </div>
+      <div class="row">
+        <a href="./forgot" class="text-end register">¿Olvidaste tu contraseña?</a>
+      </div>
+      <br>
+      <input type="button" class="button" value="INGRESAR">
+      <br>
+      <br>
+      <br>
+      <div class="row text-center">
+        <p id="subtitle">¿Aún no tienes una cuenta?<br>
+        <a href="./register.html" class="register">Registrate aquí </a>
+        </p>
+        
+      </div>
+      <br>
+      <br>
+      <br>
+    </form>
+  </div>
+  
+
+  <div class="nab fixed-bottom">
+    <div class="navigation">
+      <ul>
+        <li class="list">
+          <a href="./index.html">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="text">Inicio</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./search.html">
+            <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+            <span class="text">Buscar</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./categories.html">
+            <span class="icon"><ion-icon name="list-outline"></ion-icon></span>
+            <span class="text">Categorias</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="./car.html">
+            <span class="icon"><ion-icon name="cart-outline"></ion-icon></span>
+            <span class="text">Mi carrito</span>
+          </a>
+        </li>
+        <li class="list active">
+          <a href="./login.html">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="text">Mi cuenta</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </div>
+  </div>
+  <script>
+    const list = document.querySelectorAll('.list');
+    function activeLink(){
+      list.forEach((item) => 
+      item.classList.remove('active'));
+      this.classList.add('active')
+    }
+    list.forEach((item) => 
+    item.addEventListener('click', activeLink))
+  </script>
+  
+
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+
+</html>
